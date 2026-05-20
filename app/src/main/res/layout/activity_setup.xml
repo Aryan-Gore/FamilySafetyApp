@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:minHeight="600dp">
+
+        <!-- Logo -->
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp">
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_green_light"/>
+
+            <View
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/circle_green"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set up your profile to get started"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="36dp"/>
+
+        <!-- Preview Avatar -->
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="24dp">
+
+            <View
+                android:id="@+id/viewPreviewAvatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_green"/>
+
+            <TextView
+                android:id="@+id/tvPreviewInitial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="?"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
+
+        </FrameLayout>
+
+        <!-- Nickname Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:textSize="13sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="6dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <EditText
+                android:id="@+id/etNickname"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="e.g. Dad, Mom, Kid"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="16dp"
+                android:background="#FFFFFF"
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:textColorHint="#BDBDBD"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Pick Color Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Your Color"
+            android:textSize="13sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Color Picker Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <!-- Green -->
+            <View
+                android:id="@+id/colorGreen"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/circle_green"
+                android:layout_margin="8dp"/>
+
+            <!-- Blue -->
+            <View
+                android:id="@+id/colorBlue"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/circle_blue"
+                android:layout_margin="8dp"/>
+
+            <!-- Red -->
+            <View
+                android:id="@+id/colorRed"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/circle_red"
+                android:layout_margin="8dp"/>
+
+            <!-- Orange -->
+            <View
+                android:id="@+id/colorOrange"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/circle_orange"
+                android:layout_margin="8dp"/>
+
+            <!-- Purple -->
+            <View
+                android:id="@+id/colorPurple"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/circle_purple"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Selected Color Text -->
+        <TextView
+            android:id="@+id/tvSelectedColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green selected"
+            android:textSize="13sp"
+            android:textColor="#43A047"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveSetup"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Save and Continue"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#43A047"/>
+
+    </LinearLayout>
+
+</ScrollView>

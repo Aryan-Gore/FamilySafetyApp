@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA">
+
+    <!-- Top Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:elevation="4dp">
+
+        <!-- App Name Centered -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family Safety"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Member Count -->
+        <TextView
+            android:id="@+id/tvMemberCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading members..."
+            android:textSize="13sp"
+            android:textColor="#757575"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!-- Members List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMembers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:clipToPadding="false"/>
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:elevation="8dp">
+
+        <!-- Share Location Button -->
+        <Button
+            android:id="@+id/btnStartSharing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Start Sharing My Location"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#43A047"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Stop Sharing Button -->
+        <Button
+            android:id="@+id/btnStopSharing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Stop Sharing My Location"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E53935"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Two buttons row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <!-- View Map Button -->
+            <Button
+                android:id="@+id/btnViewMap"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="View Map"
+                android:textSize="13sp"
+                android:textColor="#1565C0"
+                android:backgroundTint="#E3F2FD"
+                android:layout_marginEnd="6dp"/>
+
+            <!-- Saved Locations Button -->
+            <Button
+                android:id="@+id/btnLocations"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Saved Locations"
+                android:textSize="13sp"
+                android:textColor="#C62828"
+                android:backgroundTint="#FCE4EC"/>
+
+        </LinearLayout>
+
+        <!-- Status Text -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location sharing is OFF"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:gravity="center"
+            android:paddingTop="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

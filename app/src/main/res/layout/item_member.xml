@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF">
+
+        <!-- Color Avatar Circle -->
+        <FrameLayout
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="12dp">
+
+            <View
+                android:id="@+id/viewMemberColor"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@drawable/circle_green"/>
+
+            <TextView
+                android:id="@+id/tvMemberInitial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
+
+        </FrameLayout>
+
+        <!-- Member Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/tvMemberName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dad"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="3dp"/>
+
+            <!-- Address -->
+            <TextView
+                android:id="@+id/tvMemberAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MG Road, Jabalpur"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:layout_marginBottom="3dp"/>
+
+            <!-- Last Seen -->
+            <TextView
+                android:id="@+id/tvMemberLastSeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 mins ago"
+                android:textSize="11sp"
+                android:textColor="#BDBDBD"/>
+
+        </LinearLayout>
+
+        <!-- Right Side Info -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <!-- Online Badge -->
+            <TextView
+                android:id="@+id/tvMemberStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:textSize="11sp"
+                android:textColor="#2E7D32"
+                android:background="@drawable/badge_green"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:layout_marginBottom="6dp"/>
+
+            <!-- Battery -->
+            <TextView
+                android:id="@+id/tvMemberBattery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="85%"
+                android:textSize="11sp"
+                android:textColor="#757575"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
