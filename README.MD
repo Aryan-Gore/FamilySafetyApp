@@ -233,7 +233,7 @@ Open App → Setup (name + color) → Start Sharing
 
 ## Developer
 
-- **Name**: Aryan
+- **Name**: Aryan Gore
 - **Package**: com.aryan.family_safety
 - **Built with**: Android Studio, Java, Firebase, OSMDroid
 
