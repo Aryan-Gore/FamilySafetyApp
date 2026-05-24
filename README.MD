@@ -15,7 +15,10 @@ A real-time family location tracking Android app built with Java, Firebase, and 
 ![Details](Images/details.jpeg)
 
 ### Location History
-![Location History](Images/location_history.jpeg)
+![Location History](Images/locaction_history.jpeg)
+
+### Location History
+![Saved Location ](Images/saved_locactions.jpeg)
 
 ### Map Screen
 ![Map](Images/map.jpeg)
