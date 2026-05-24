@@ -2,6 +2,11 @@
 
 A real-time family location tracking Android app built with Java, Firebase, and OpenStreetMap.
 
+
+## Screenshots
+
+![Home](screenshots/home.png)
+
 ---
 
 ## Features
