@@ -31,7 +31,7 @@ A real-time family location tracking Android app built with Java, Firebase, and 
 
   <tr>
     <td align="center">
-      <img src="Images/saved_locactions.jpeg" width="250"/><br>
+      <img src="Images/saved_locations.jpeg" width="250"/><br>
       <b>Saved Locations</b>
     </td>
     <td align="center">
