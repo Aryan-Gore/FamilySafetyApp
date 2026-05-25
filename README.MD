@@ -4,25 +4,42 @@ A real-time family location tracking Android app built with Java, Firebase, and 
 
 
 ## Screenshots
+## Screenshots
 
-### Login Page
-![Login](Images/Login_page.jpeg)
+<table>
+  <tr>
+    <td align="center">
+      <img src="Images/Login_page.jpeg" width="250"/><br>
+      <b>Login Page</b>
+    </td>
+    <td align="center">
+      <img src="Images/login_successful.jpeg" width="250"/><br>
+      <b>Login Successful</b>
+    </td>
+  </tr>
 
-### Login Successful
-![Login Successful](Images/login_successful.jpeg)
+  <tr>
+    <td align="center">
+      <img src="Images/details.jpeg" width="250"/><br>
+      <b>Details Screen</b>
+    </td>
+    <td align="center">
+      <img src="Images/locaction_history.jpeg" width="250"/><br>
+      <b>Location History</b>
+    </td>
+  </tr>
 
-### Details Screen
-![Details](Images/details.jpeg)
-
-### Location History
-![Location History](Images/locaction_history.jpeg)
-
-### Location History
-![Saved Location ](Images/saved_locactions.jpeg)
-
-### Map Screen
-![Map](Images/map.jpeg)
----
+  <tr>
+    <td align="center">
+      <img src="Images/saved_locactions.jpeg" width="250"/><br>
+      <b>Saved Locations</b>
+    </td>
+    <td align="center">
+      <img src="Images/map.jpeg" width="250"/><br>
+      <b>Map Screen</b>
+    </td>
+  </tr>
+</table>
 
 ## Features
 
